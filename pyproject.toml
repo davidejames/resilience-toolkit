@@ -24,7 +24,10 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "retry-toolkit",
+  "timing-toolkit",
+]
 
 [project.urls]
 Documentation = "https://github.com/David E. James/resilience-toolkit#readme"
