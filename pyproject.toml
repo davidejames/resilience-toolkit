@@ -30,9 +30,9 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/David E. James/resilience-toolkit#readme"
-Issues = "https://github.com/David E. James/resilience-toolkit/issues"
-Source = "https://github.com/David E. James/resilience-toolkit"
+Documentation = "https://github.com/davidejames/resilience-toolkit#readme"
+Issues = "https://github.com/davidejames/resilience-toolkit/issues"
+Source = "https://github.com/davidejames/resilience-toolkit"
 
 [tool.hatch.version]
 path = "src/resilience_toolkit/__about__.py"
