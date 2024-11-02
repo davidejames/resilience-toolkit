@@ -15,6 +15,28 @@
 ```console
 pip install resilience-toolkit
 ```
+## Examples
+
+(Hypothetical) example of multiple resilience methods working together
+
+```python
+
+@timing(tmax=3)
+@fallback()
+@circuitbreaker()
+@retry(tries=3, sleep=0.12, backoff=exponential)
+@timing(tmax=0.3)
+def foo(a,b):
+    # do some networking stuff
+    pass
+
+@fallback.foo()
+@timing(tmax=0.3)
+def foo_alt():
+    # some backup method
+    pass
+
+```
 
 ## License
 
